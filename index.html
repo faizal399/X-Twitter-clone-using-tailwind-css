@@ -1,0 +1,495 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/icons/x-social-media-black-icon.png" type="image/x-icon">
+    <title>Twitter X tailwind CSS</title>
+    <style>
+        ul li img {
+            width: 30px;
+        }
+
+        /* Hide scrollbar but keep scrolling */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body class="bg-black ">
+
+    <div class="flex container mx-auto w-full overflow-none justify-center">
+        <div class="first bg-black lg:w-1/5 sm:w-10  md:w-10   z-0 h-screen border-r border-gray-700 ">
+            <svg class="w-10 sm:w-8 md:w-8 md:p-1 invert m-2 md:ml-1 ml-2" viewBox="0 0 24 24" aria-hidden="true"
+                class="w-8 r-4qtqp9 invert-100  r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                <g>
+                    <path
+                        d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                    </path>
+                </g>
+            </svg>
+
+            <div class="sidebar mt-3 text-lg  font-medium ">
+                <ul
+                    class="flex flex-col [&>li]:p-2.5 [&>li]:hover:bg-white/15 [&>li]:cursor-pointer   [&>li]:rounded-3xl  justify-center items-start text-white ">
+                    <li class="flex flex-row  justify-center items-center"><img class=""
+                            src="/src/icons/icons8-home-24.png" alt=""><span class="ml-3 hidden lg:block ">Home</span>
+                    </li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-search-30 (1).png"
+                            alt="Seaarch"><span class="ml-3 hidden lg:block ">Search</span></li>
+                    <li class="flex flex-row justify-center items-center"><img
+                            src="/src/icons/icons8-notification-48.png" alt="notification"><span
+                            class="ml-3 hidden lg:block ">Notification</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-mail-50.png"
+                            alt=""><span class="ml-3 hidden lg:block ">Messages</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-grok-48.png"
+                            alt="grok"><span class="ml-3 hidden lg:block ">Grok AI</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-list-24.png"
+                            alt="grok"><span class="ml-3 hidden lg:block ">List</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-bookmark-32.png"
+                            alt="book marks"><span class="ml-3 hidden lg:block">Bookmark</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-x-30.png"
+                            alt="Premium"><span class="ml-3 hidden lg:block">Premium</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-thunder-48.png"
+                            alt="verified"><span class="ml-3 hidden lg:block">Verified Orgs</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-profile-32.png"
+                            alt=""><span class="ml-3 hidden lg:block ">Profile</span></li>
+                    <li class="flex flex-row justify-center items-center"><img src="/src/icons/icons8-more-50.png"
+                            alt=""><span class="ml-3 hidden lg:block ">More</span></li>
+                </ul>
+                <div class=" m-auto w-full  ">
+                    <button
+                        class="hover:shadow shadow-white   hidden lg:block w-40 font-bold cursor-pointer h-11 m-3  bg-[#D6B9FC] hover:bg-white hover:text-[#D6B9FC] rounded-3xl  ">POST</button>
+                </div>
+            </div>
+            <div class="Account p-2 rounded-4xl   hover:bg-white/15 flex justify-between    ">
+                <div><img class=" w-10 rounded-4xl  " src="/src/icons/faizal .jpg" alt="Profile pic">
+                </div>
+                <div class="mr-6 cursor-pointer hidden lg:block select-none ">
+                    <h1 class="text-white font-bold cursor-pointer select-none">Faizal Sheikh</h1>
+                    <p class="text-gray-500 cursor-pointer select-none ">@faizalsheikh399</p>
+                </div>
+                <div>
+                    <img class="w-8/12 mt-3 sm:hidden block cursor-pointer  " src="/src/icons/icons8-ellipsis-30.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- second section -->
+        <div
+            class="second h-screen overflow-x-scroll hide-scrollbar text-white bg-black md:w-3/5 sm:w-full w-full lg:w-2/5 border-x border-white mr-5">
+
+            <div class="Top-navigation grid grid-cols-2">
+                <div class=" flex justify-center  items-center font-bold hover:bg-gray-900 w-full m-auto ">
+                    <p class="m-auto w-fit h-10 mt-4 ">For you</p>
+                </div>
+                <div class="m-auto flex justify-center items-center font-bold hover:bg-gray-900  w-full ">
+                    <P class="m-auto w-fit h-10 mt-4">Following</P>
+                </div>
+                <div class="upload-section border border-gray-600 col-span-4">
+                    <div class="flex mt-2"><img class="w-10 h-10 m-3 rounded-4xl " src="/src/icons/faizal .jpg" alt="">
+                        <div>
+                            <input class="w-4/5 border-none focus:outline-none mt-3 text-lg" type="text"
+                                placeholder="What's happenning?">
+                            <div class="mt-2">
+                                <p
+                                    class="  w-fit rounded-4xl justify-center align-middle p-1 px-2 center hover:bg-[#1D9BF0]/15 ">
+                                    <span class="h-5 font-bold text-[#1D9BF0]  cursor-pointer w-100">Everyone can
+                                        reply</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-5">
+                        <div class="cursor-pointer ml-2.5   ">
+
+                            <button class=" p-1 rounded-4xl bg-center cursor-pointer  hover:bg-white/15 ">
+                                <img class="w-5" src="/src/icons/icons8-gallery-48.png" alt="">
+                            </button>
+                            <button class="p-1 rounded-4xl bg-center cursor-pointer hover:bg-white/15">
+                                <img class="w-5" src="/src/icons/icons8-grok-48.png" alt="">
+                            </button>
+                            <button class="p-1 rounded-4xl bg-center cursor-pointer hover:bg-white/15 ">
+                                <img class="w-5" src="/src/icons/icons8-list-64.png" alt="">
+                            </button>
+                            <button class="p-1 rounded-4xl bg-center cursor-pointer hover:bg-white/15 ">
+
+                                <img class="w-5" src="/src/icons/icons8-date-50.png" alt="">
+                            </button>
+                            <button class="p-1 rounded-4xl bg-center cursor-pointer hover:bg-white/15 ">
+
+                                <img class="w-5" src="/src/icons/icons8-gif-24.png" alt="">
+                            </button>
+                            <button class=" p-1 rounded-4xl bg-center cursor-pointer hover:bg-white/15">
+
+                                <img class="w-5 " src="/src/icons/icons8-smile-50.png" alt="">
+                            </button>
+                            <button class="p-1 rounded-4xl bg-center cursor-pointer hover:bg-white/15">
+
+                                <img class="w-5" src="/src/icons/icons8-location-50.png" alt="">
+                            </button>
+                        </div>
+                        <div><button
+                                class="w-full  bg-gray-600 rounded-3xl p-2 font-bold pl-4 cursor-pointer pr-4">POST</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-gray-600 col-span-5 h-10 justify-center flex items-center hover:bg-gray-900">
+                    <p class="m-auto w-fit text-[#1D9BF0] font-bold">Show 175 Posts</p>
+                </div>
+            </div>
+            <!-- post section -->
+            <!-- first post -->
+            <!-- === START: POST WITH VIDEO EMBED === -->
+            <div
+                class="post-section p-4 border-b pr-6 border-gray-800 hover:bg-gray-950 transition-colors cursor-pointer">
+                <div class="flex">
+                    <!-- Profile Pic Column -->
+                    <div class="mr-3">
+                        <img class="w-10 h-10 rounded-full" src="https://placehold.co/40x40/333333/ffffff?text=T"
+                            alt="Profile pic">
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="flex-1">
+                        <!-- Name and Menu Bar -->
+                        <div class="flex justify-between w-full items-center">
+                            <div class="text-sm sm:text-base whitespace-nowrap">
+                                <span class="font-bold hover:underline">Tasshuu</span>
+                                <span class="text-gray-500 ml-1">@mantashasheikh456</span>
+                                <span class="text-gray-500 ml-1">· 2h</span>
+                            </div>
+
+                            <!-- Ellipsis/More Icon -->
+                            <div
+                                class="w-8 h-8 flex justify-center items-center rounded-full hover:bg-x-blue/[0.1] text-gray-500 hover:text-x-blue transition-colors ">
+
+                                <img class="w-6 h-6 p1 m-1 rounded-4xl" src="/src/icons/icons8-grok-48.png" alt="">
+                                <img class="w-6 h-6 p-1 rounded-4xl" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                            </div>
+                        </div>
+
+                        <!-- Post Content -->
+                        <div class="post mt-1 text-white">
+                            <p>On this day in 2023 KL Rahul sacrificed his World Cup half-century, and an umpire lost
+                                his job, all
+                                for Virat Kohli's century.
+                                Cricket peaked that day for me ❤️</p>
+                        </div>
+
+                        <!-- Video Embed -->
+                        <div class="mt-3 w-full border border-gray-700 rounded-xl overflow-hidden">
+                            <video controls class="w-full h-full object-cover">
+                                <!-- Placeholder video source -->
+                                <source src="/src/video/twitter content.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Engagement/Interaction Bar -->
+                        <div class="flex w-full justify-between h-fit mt-4">
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-comment-50.png" alt="">
+                                <span class="hover:text-white/80 text-gray-500">34K</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-exchange-50.png" alt="">
+                                <span class="hover:text-yellow-500/80 text-gray-500">4K</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 rounded-4xl  ">
+                                <img class="w-6" src="/src/icons/icons8-like-50.png" alt="">
+                                <span class="hover:text-pink-500/80 text-gray-500">2M</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-insight-24.png" alt="">
+                                <span class="hover:text-blue-500/80 text-gray-500">5.4M</span>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img class="w-6 h-5 mt-2 m-1" src="/src/icons/icons8-bookmarks-32.png" alt="">
+                                <img class="w-6 h-6" src="/src/icons/icons8-upload-50.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second post -->
+            <!-- === START: POST WITH VIDEO EMBED === -->
+            <div
+                class="post-section p-4 border-b pr-6 border-gray-800 hover:bg-gray-950 transition-colors cursor-pointer">
+                <div class="flex">
+                    <!-- Profile Pic Column -->
+                    <div class="mr-3">
+                        <img class="w-10 h-10 rounded-full" src="https://placehold.co/40x40/333333/ffffff?text=F"
+                            alt="Profile pic">
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="flex-1">
+                        <!-- Name and Menu Bar -->
+                        <div class="flex justify-between w-full items-center">
+                            <div class="text-sm sm:text-base whitespace-nowrap">
+                                <span class="font-bold hover:underline">Faizal</span>
+                                <span class="text-gray-500 ml-1">@faizalsheikh399</span>
+                                <span class="text-gray-500 ml-1">· 4h</span>
+                            </div>
+
+                            <!-- Ellipsis/More Icon -->
+                            <div
+                                class="w-8 h-8 flex justify-center items-center rounded-full hover:bg-x-blue/[0.1] text-gray-500 hover:text-x-blue transition-colors ">
+
+                                <img class="w-6 h-6 p1 m-1 rounded-4xl" src="/src/icons/icons8-grok-48.png" alt="">
+                                <img class="w-6 h-6 p-1 rounded-4xl" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                            </div>
+                        </div>
+
+                        <!-- Post Content -->
+                        <div class="post mt-1 text-white">
+                            <p>Hi, I’m Faizal Sheikh, a passionate Frontend Developer and BCA student at Sardar Patel
+                                College, Gondwana University.
+                                I love building clean and responsive web interfaces using HTML, CSS, JavaScript,
+                                Bootstrap, and Tailwind CSS.
+                                This project showcases my learning journey and creativity in web development. 🚀</p>
+                        </div>
+
+                        <!-- Video Embed -->
+                        <div class="mt-3 w-full hide-scrollbar border border-gray-700 rounded-xl  overflow-hidden">
+                            <!-- <video controls class="w-full h-full object-cover">
+                                 Placeholder video source -->
+                            <!-- <source src="/src/video/twitter content.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>  -->
+                            <!-- <iframe
+                                src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7375332309044015104?compact=1"
+                                height="399" width="504" frameborder="0" allowfullscreen=""
+                                title="Embedded post"></iframe> -->
+                                <iframe class="hide-scrollbar" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7375332309044015104?collapsed=1" height="541" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                        </div>
+
+                        <!-- Engagement/Interaction Bar -->
+                        <div class="flex w-full justify-between h-fit mt-4">
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-comment-50.png" alt="">
+                                <span class="hover:text-white/80 text-gray-500">44K</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-exchange-50.png" alt="">
+                                <span class="hover:text-yellow-500/80 text-gray-500">11K</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 rounded-4xl  ">
+                                <img class="w-6" src="/src/icons/icons8-like-50.png" alt="">
+                                <span class="hover:text-pink-500/80 text-gray-500">10M</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-insight-24.png" alt="">
+                                <span class="hover:text-blue-500/80 text-gray-500">14.4M</span>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img class="w-6 h-5 mt-2 m-1" src="/src/icons/icons8-bookmarks-32.png" alt="">
+                                <img class="w-6 h-6" src="/src/icons/icons8-upload-50.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third post -->
+            <!-- === START: POST WITH VIDEO EMBED === -->
+            <div
+                class="post-section p-4 border-b pr-6 border-gray-800 hover:bg-gray-950 transition-colors cursor-pointer">
+                <div class="flex">
+                    <!-- Profile Pic Column -->
+                    <div class="mr-3">
+                        <img class="w-10 h-10 rounded-full" src="/src/icons/faizal .jpg"
+                            alt="Profile pic">
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="flex-1">
+                        <!-- Name and Menu Bar -->
+                        <div class="flex justify-between w-full items-center">
+                            <div class="text-sm sm:text-base whitespace-nowrap">
+                                <span class="font-bold hover:underline">faizal_sheikh</span>
+                                <span class="text-gray-500 ml-1">@faizalsheikh999</span>
+                                <span class="text-gray-500 ml-1">· 5h</span>
+                            </div>
+
+                            <!-- Ellipsis/More Icon -->
+                            <div
+                                class="w-8 h-8 flex justify-center items-center rounded-full hover:bg-x-blue/[0.1] text-gray-500 hover:text-x-blue transition-colors ">
+
+                                <img class="w-6 h-6 p1 m-1 rounded-4xl" src="/src/icons/icons8-grok-48.png" alt="">
+                                <img class="w-6 h-6 p-1 rounded-4xl" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                            </div>
+                        </div>
+
+                        <!-- Post Content -->
+                        <div class="post mt-1 text-white">
+                            <p>On this day in 2023 KL Rahul sacrificed his World Cup half-century, and an umpire lost
+                                his job, all
+                                for Virat Kohli's century.
+                                Cricket peaked that day for me ❤️</p>
+                        </div>
+
+                        <!-- Video Embed -->
+                        <div class="mt-3 w-full border border-gray-700 rounded-xl overflow-hidden">
+                            <video controls class="w-full h-full object-cover">
+                                <!-- Placeholder video source -->
+                                <source src="/src/video/twitter content.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <!-- Engagement/Interaction Bar -->
+                        <div class="flex w-full justify-between h-fit mt-4">
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-comment-50.png" alt="">
+                                <span class="hover:text-white/80 text-gray-500">34K</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-exchange-50.png" alt="">
+                                <span class="hover:text-yellow-500/80 text-gray-500">4K</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 rounded-4xl  ">
+                                <img class="w-6" src="/src/icons/icons8-like-50.png" alt="">
+                                <span class="hover:text-pink-500/80 text-gray-500">2M</span>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 ">
+                                <img class="w-6" src="/src/icons/icons8-insight-24.png" alt="">
+                                <span class="hover:text-blue-500/80 text-gray-500">5.4M</span>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img class="w-6 h-5 mt-2 m-1" src="/src/icons/icons8-bookmarks-32.png" alt="">
+                                <img class="w-6 h-6" src="/src/icons/icons8-upload-50.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- Third Section -->
+        <div
+            class="third relative bg-black lg:w-1/4 md:w-2/4 sm:hidden lg:block md:block hidden  overflow-y-auto h-screen scroll-smooth hide-scrollbar">
+            <!-- Search bar -->
+            <div
+                class="flex sticky backdrop-blur-md  top-2 justify-between items-center p-2 border-2  focus:border-8 rounded-3xl border-[#1D9BF0] m-5">
+                <img class="w-5 h-5" src="/src/icons/icons8-search-30 (1).png" alt="">
+
+                <input class="peer bg-transparent w-full focus:outline-none text-white " type="text"
+                    placeholder="Search" name="" id="">
+                <img class="peer-focus:block hidden bg-white rounded-4xl  w-5" src="/src/icons/icons8-cross-50.png"
+                    alt="">
+            </div>
+
+            <div
+                class="border border-gray-500 hover:bg-white/15 hover:shadow-2xl shadow-white/10 rounded-3xl w-full  text-white p-2">
+                <h1 class="font-bold m-2 text-2xl">Subscribe ro Premium</h1>
+                <p class="m-2 mr-10">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                <button
+                    class="hover:bg-[#0079ca] font-bold w-fit p-2 pl-4 pr-4 bg-[#1D9BF0] rounded-4xl m-2">SUBSCRIBE</button>
+            </div>
+
+            <!-- What Happining section -->
+            <hr class="bg-white/40 mt-3 mb-3 w-full h-0.5 rounded-4xl">
+
+            <div class="text-white h-fit mt-5 mb-5 border rounded-2xl border-gray-500 hover:shadow-2xl shadow-white/10">
+                <h1 class="text-2xl p-2 font-bold">What's happenning?</h1>
+                <div class="flex gap-4 p-4 hover:bg-white/10 ">
+                    <img class="w-30 rounded-2xl" src="/src/icons/rushmore.jpeg" alt="">
+                    <div>
+                        <h1 class="font-bold">Rushmore</h1>
+                        <p class="text-gray-500">live</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center hover:bg-white/10 p-4">
+                    <div>
+                        <p class="text-gray-500">Trending</p>
+                        <h1 class="font-bold">#IndiaWebdev</h1>
+
+                    </div>
+                    <img class="w-5 h-5" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                </div>
+                <div class="flex justify-between items-center hover:bg-white/10 p-4">
+                    <div>
+                        <p class="text-gray-500">Trending</p>
+                        <h1 class="font-bold">#IndiaWebdev</h1>
+
+                    </div>
+                    <img class="w-5 h-5" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                </div>
+                <div class="flex justify-between items-center hover:bg-white/10 p-4">
+                    <div>
+                        <p class="text-gray-500">Trending</p>
+                        <h1 class="font-bold">#IndiaWebdev</h1>
+
+                    </div>
+                    <img class="w-5 h-5" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                </div>
+                <div class="flex justify-between items-center hover:bg-white/10 p-4">
+                    <div>
+                        <p class="text-gray-500">Trending</p>
+                        <h1 class="font-bold">#IndiaWebdev</h1>
+
+                    </div>
+                    <img class="w-5 h-5" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                </div>
+                <div class="flex justify-between items-center hover:bg-white/10 p-4">
+                    <div>
+                        <p class="text-gray-500">Trending</p>
+                        <h1 class="font-bold">#IndiaWebdev</h1>
+
+                    </div>
+                    <img class="w-5 h-5" src="/src/icons/icons8-ellipsis-30.png" alt="">
+
+                </div>
+                <div class="p-4 text-blue-600">
+                    <a href="#">See more...</a>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer text-white bg-black py-4 text-sm flex flex-wrap justify-center gap-2">
+                <span>Terms of Service</span>
+                <span>|</span>
+                <span>Privacy Policy</span>
+                <span>|</span>
+                <span>Cookie Policy</span>
+                <span>|</span>
+                <span>Accessibility</span>
+                <span>|</span>
+                <span>Ads info</span>
+                <span>|</span>
+                <span>More</span>
+                <span>© 2025 X Corp.</span>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
